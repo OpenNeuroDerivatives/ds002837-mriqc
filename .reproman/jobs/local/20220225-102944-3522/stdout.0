@@ -1,1 +1,624 @@
-../../../../.git/annex/objects/w4/PZ/MD5E-s61597--3f2510b4dd49a9e0204d405e815bbc11.0/MD5E-s61597--3f2510b4dd49a9e0204d405e815bbc11.0
+[ReproMan] pre-command...
+[ReproMan] executing command code/containers/scripts/singularity_cmd run code/containers/images/bids/bids-mriqc--21.0.0rc2.sing sourcedata/raw /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc participant --participant-label '11' -w '/scratch1/03201/jbwexler/work_dir/mriqc//ds002837_sub-11' -vv --nprocs 11 --ants-nthreads 8 --verbose-reports --dsname ds002837 --ica --mem_gb 30
+[ReproMan] ... within /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc
+220301-07:47:16,598 cli IMPORTANT:
+	 
+    Running MRIQC version 21.0.0rc2:
+      * BIDS dataset path: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sourcedata/raw.
+      * Output folder: /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc.
+      * Analysis levels: ['participant'].
+
+220301-07:47:17,241 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:47:29,140 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:47:53,675 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220301-07:47:53,717 nipype.workflow INFO:
+	 Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring']
+220301-07:47:53,963 nipype.workflow INFO:
+	 Running in parallel.
+220301-07:47:53,966 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 11 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220301-07:47:54,213 nipype.workflow INFO:
+	 [Job 1] Cached (mriqc_wf.anatMRIQC.conform).
+220301-07:47:54,243 nipype.workflow INFO:
+	 [Job 2] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220301-07:47:54,247 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/metadata".
+220301-07:47:54,281 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220301-07:47:59,217 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:00,860 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:03,284 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:03,346 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220301-07:48:03,347 nipype.workflow INFO:
+	 [Job 3] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220301-07:48:03,461 nipype.workflow INFO:
+	 [Job 4] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220301-07:48:03,463 nipype.workflow INFO:
+	 [Job 5] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220301-07:48:03,465 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-02_bold.nii.gz/metadata".
+220301-07:48:03,481 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220301-07:48:04,476 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:04,514 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:04,530 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:04,777 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:04,829 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:05,658 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:05,663 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:06,141 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:06,857 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:07,377 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:09,554 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:09,579 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:09,744 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:09,820 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,548 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,552 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,588 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,626 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,634 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,640 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,648 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,650 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,667 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:10,675 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:11,131 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:13,284 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:13,530 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:13,600 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:13,633 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:13,820 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:13,861 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:13,912 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,42 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,45 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,106 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,113 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,246 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,252 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,334 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,410 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,846 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,941 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:14,983 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:15,379 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:15,382 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:15,426 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:15,441 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:16,36 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:16,512 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:16,601 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:16,633 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:16,983 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:17,56 nipype.utils WARNING:
+	 A newer version (1.7.0) of nipy/nipype is available. You are using 1.6.1
+220301-07:48:18,407 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220301-07:48:18,407 nipype.workflow INFO:
+	 [Job 6] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220301-07:48:18,550 nipype.workflow INFO:
+	 [Job 7] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220301-07:48:18,561 nipype.workflow INFO:
+	 [Job 8] Cached (mriqc_wf.funcMRIQC.non_steady_state_detector).
+220301-07:48:18,603 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.metadata" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/metadata".
+220301-07:48:18,836 nipype.workflow INFO:
+	 [Node] Running "metadata" ("niworkflows.interfaces.bids.ReadSidecarJSON")
+220301-07:48:55,168 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.metadata".
+220301-07:48:55,169 nipype.workflow INFO:
+	 [Job 9] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.metadata).
+220301-07:48:55,389 nipype.workflow INFO:
+	 [Job 10] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.provenance).
+220301-07:48:55,392 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 6 jobs ready. Free memory (GB): 29.80/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ComputeIQMs.metadata
+220301-07:48:55,570 nipype.workflow INFO:
+	 [Job 11] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.inu_n4).
+220301-07:48:55,636 nipype.workflow INFO:
+	 [Job 12] Cached (mriqc_wf.anatMRIQC.AirMaskWorkflow.RotationMask).
+220301-07:48:55,669 nipype.workflow INFO:
+	 [Job 13] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220301-07:48:55,724 nipype.workflow INFO:
+	 [Job 14] Cached (mriqc_wf.funcMRIQC.sanitize).
+220301-07:48:55,769 nipype.workflow INFO:
+	 [Job 15] Cached (mriqc_wf.funcMRIQC.sanitize).
+220301-07:48:55,802 nipype.workflow INFO:
+	 [Job 16] Cached (mriqc_wf.funcMRIQC.sanitize).
+220301-07:48:57,393 nipype.workflow INFO:
+	 [Job 0] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.metadata).
+220301-07:48:57,394 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 8 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220301-07:48:57,586 nipype.workflow INFO:
+	 [Job 17] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.skullstrip).
+220301-07:48:57,618 nipype.workflow INFO:
+	 [Job 18] Cached (mriqc_wf.anatMRIQC.HeadMaskWorkflow.fsl_bet).
+220301-07:48:57,663 nipype.workflow INFO:
+	 [Job 19] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220301-07:48:57,681 nipype.workflow INFO:
+	 [Job 20] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220301-07:48:57,743 nipype.workflow INFO:
+	 [Job 21] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220301-07:48:57,774 nipype.workflow INFO:
+	 [Job 22] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220301-07:48:57,830 nipype.workflow INFO:
+	 [Job 23] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.motion_correct).
+220301-07:48:57,854 nipype.workflow INFO:
+	 [Job 24] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesMask).
+220301-07:48:59,394 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 17 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220301-07:48:59,573 nipype.workflow INFO:
+	 [Job 25] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.sstrip_orig_vol).
+220301-07:48:59,665 nipype.workflow INFO:
+	 [Job 26] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotHeadmask).
+220301-07:48:59,726 nipype.workflow INFO:
+	 [Job 27] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220301-07:48:59,757 nipype.workflow INFO:
+	 [Job 28] Cached (mriqc_wf.funcMRIQC.mean).
+220301-07:48:59,798 nipype.workflow INFO:
+	 [Job 29] Cached (mriqc_wf.funcMRIQC.compute_tsnr).
+220301-07:48:59,830 nipype.workflow INFO:
+	 [Job 30] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220301-07:48:59,896 nipype.workflow INFO:
+	 [Job 31] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220301-07:48:59,993 nipype.workflow INFO:
+	 [Job 32] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220301-07:49:00,10 nipype.workflow INFO:
+	 [Job 33] Cached (mriqc_wf.funcMRIQC.mean).
+220301-07:49:00,43 nipype.workflow INFO:
+	 [Job 34] Cached (mriqc_wf.funcMRIQC.compute_tsnr).
+220301-07:49:00,61 nipype.workflow INFO:
+	 [Job 35] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220301-07:49:00,133 nipype.workflow INFO:
+	 [Job 36] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220301-07:49:00,181 nipype.workflow INFO:
+	 [Job 37] Cached (mriqc_wf.funcMRIQC.fMRI_HMC.ComputeFD).
+220301-07:49:00,219 nipype.workflow INFO:
+	 [Job 38] Cached (mriqc_wf.funcMRIQC.mean).
+220301-07:49:00,244 nipype.workflow INFO:
+	 [Job 39] Cached (mriqc_wf.funcMRIQC.compute_tsnr).
+220301-07:49:00,287 nipype.workflow INFO:
+	 [Job 40] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.quality).
+220301-07:49:00,326 nipype.workflow INFO:
+	 [Job 41] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.SpikesFinderBgMask).
+220301-07:49:01,616 nipype.workflow INFO:
+	 [Job 42] Cached (mriqc_wf.anatMRIQC.AFNISkullStripWorkflow.binarize).
+220301-07:49:01,652 nipype.workflow INFO:
+	 [Job 43] Cached (mriqc_wf.anatMRIQC.segmentation).
+220301-07:49:01,720 nipype.workflow INFO:
+	 [Job 44] Cached (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220301-07:49:01,742 nipype.workflow INFO:
+	 [Job 45] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220301-07:49:01,784 nipype.workflow INFO:
+	 [Job 46] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220301-07:49:01,807 nipype.workflow INFO:
+	 [Job 47] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220301-07:49:01,864 nipype.workflow INFO:
+	 [Job 48] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220301-07:49:01,920 nipype.workflow INFO:
+	 [Job 49] Cached (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220301-07:49:01,961 nipype.workflow INFO:
+	 [Job 50] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220301-07:49:01,988 nipype.workflow INFO:
+	 [Job 51] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220301-07:49:02,30 nipype.workflow INFO:
+	 [Job 52] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220301-07:49:02,81 nipype.workflow INFO:
+	 [Job 53] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220301-07:49:02,130 nipype.workflow INFO:
+	 [Job 54] Cached (mriqc_wf.funcMRIQC.fMRIBrainMask.afni_msk).
+220301-07:49:02,168 nipype.workflow INFO:
+	 [Job 55] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.SharpenEPI).
+220301-07:49:02,196 nipype.workflow INFO:
+	 [Job 56] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicMean).
+220301-07:49:02,209 nipype.workflow INFO:
+	 [Job 57] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicNoise).
+220301-07:49:02,262 nipype.workflow INFO:
+	 [Job 58] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicSD).
+220301-07:49:03,396 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 30 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220301-07:49:03,612 nipype.workflow INFO:
+	 [Job 59] Cached (mriqc_wf.anatMRIQC.SpatialNormalization.SpatialNormalization).
+220301-07:49:03,636 nipype.workflow INFO:
+	 [Job 60] Cached (mriqc_wf.anatMRIQC.ComputeIQMs.smoothness).
+220301-07:49:03,679 nipype.workflow INFO:
+	 [Job 61] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220301-07:49:03,725 nipype.workflow INFO:
+	 [Job 62] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotBrainmask).
+220301-07:49:03,772 nipype.workflow INFO:
+	 [Job 63] Cached (mriqc_wf.anatMRIQC.ComputeIQMs.harmonize).
+220301-07:49:03,813 nipype.workflow INFO:
+	 [Job 64] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotSegmentation).
+220301-07:49:03,862 nipype.workflow INFO:
+	 [Job 65] Cached (mriqc_wf.funcMRIQC.ICA).
+220301-07:49:03,919 nipype.workflow INFO:
+	 [Job 66] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220301-07:49:03,952 nipype.workflow INFO:
+	 [Job 67] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220301-07:49:03,978 nipype.workflow INFO:
+	 [Job 68] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220301-07:49:04,13 nipype.workflow INFO:
+	 [Job 69] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220301-07:49:04,45 nipype.workflow INFO:
+	 [Job 70] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220301-07:49:04,67 nipype.workflow INFO:
+	 [Job 71] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220301-07:49:04,103 nipype.workflow INFO:
+	 [Job 72] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220301-07:49:04,183 nipype.workflow INFO:
+	 [Job 74] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220301-07:49:04,223 nipype.workflow INFO:
+	 [Job 75] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220301-07:49:04,265 nipype.workflow INFO:
+	 [Job 76] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220301-07:49:05,397 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 17 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:05,551 nipype.workflow INFO:
+	 [Job 77] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220301-07:49:05,594 nipype.workflow INFO:
+	 [Job 78] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220301-07:49:05,632 nipype.workflow INFO:
+	 [Job 79] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220301-07:49:05,688 nipype.workflow INFO:
+	 [Job 80] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220301-07:49:05,736 nipype.workflow INFO:
+	 [Job 81] Cached (mriqc_wf.funcMRIQC.ICA).
+220301-07:49:05,789 nipype.workflow INFO:
+	 [Job 82] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.ComputeDVARS).
+220301-07:49:05,827 nipype.workflow INFO:
+	 [Job 83] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.smoothness).
+220301-07:49:05,865 nipype.workflow INFO:
+	 [Job 84] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.outliers).
+220301-07:49:05,914 nipype.workflow INFO:
+	 [Job 85] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.gcor).
+220301-07:49:05,958 nipype.workflow INFO:
+	 [Job 86] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotBrainmask).
+220301-07:49:06,5 nipype.workflow INFO:
+	 [Job 87] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.PlotMosaicZoomed).
+220301-07:49:06,69 nipype.workflow INFO:
+	 [Job 88] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.EPI2MNI).
+220301-07:49:06,119 nipype.workflow INFO:
+	 [Job 89] Cached (mriqc_wf.anatMRIQC.AirMaskWorkflow.invert_xfm).
+220301-07:49:06,356 nipype.workflow INFO:
+	 [Job 91] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220301-07:49:06,428 nipype.workflow INFO:
+	 [Job 92] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220301-07:49:07,398 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 10 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:07,719 nipype.workflow INFO:
+	 [Job 93] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220301-07:49:07,793 nipype.workflow INFO:
+	 [Job 94] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220301-07:49:07,933 nipype.workflow INFO:
+	 [Job 95] Cached (mriqc_wf.funcMRIQC.ComputeIQMs.measures).
+220301-07:49:08,4 nipype.workflow INFO:
+	 [Job 96] Cached (mriqc_wf.funcMRIQC.SpatialNormalization.ResampleSegmentation).
+220301-07:49:08,99 nipype.workflow INFO:
+	 [Job 97] Cached (mriqc_wf.anatMRIQC.AirMaskWorkflow.ArtifactMask).
+220301-07:49:08,395 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/datasink".
+220301-07:49:08,603 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220301-07:49:08,795 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220301-07:49:08,795 nipype.workflow INFO:
+	 [Job 98] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220301-07:49:09,89 nipype.workflow INFO:
+	 [Job 99] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220301-07:49:09,112 nipype.workflow INFO:
+	 [Job 126] Cached (_MNItpms2t10).
+220301-07:49:09,141 nipype.workflow INFO:
+	 [Job 127] Cached (_MNItpms2t11).
+220301-07:49:09,159 nipype.workflow INFO:
+	 [Job 128] Cached (_MNItpms2t12).
+220301-07:49:09,399 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 11 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:09,550 nipype.workflow INFO:
+	 [Job 90] Cached (mriqc_wf.anatMRIQC.ComputeIQMs.MNItpms2t1).
+220301-07:49:09,900 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-02_bold.nii.gz/datasink".
+220301-07:49:10,106 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220301-07:49:10,247 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220301-07:49:10,247 nipype.workflow INFO:
+	 [Job 100] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220301-07:49:10,596 nipype.workflow INFO:
+	 [Job 101] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220301-07:49:10,877 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/datasink".
+220301-07:49:11,75 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220301-07:49:11,264 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ComputeIQMs.datasink".
+220301-07:49:11,264 nipype.workflow INFO:
+	 [Job 102] Completed (mriqc_wf.funcMRIQC.ComputeIQMs.datasink).
+220301-07:49:11,614 nipype.workflow INFO:
+	 [Job 103] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.BigPlot).
+220301-07:49:11,689 nipype.workflow INFO:
+	 [Job 104] Cached (mriqc_wf.anatMRIQC.ComputeIQMs.provenance).
+220301-07:49:11,758 nipype.workflow INFO:
+	 [Job 106] Cached (mriqc_wf.anatMRIQC.ComputeIQMs.ComputeQI2).
+220301-07:49:11,826 nipype.workflow INFO:
+	 [Job 107] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotAirmask).
+220301-07:49:11,857 nipype.workflow INFO:
+	 [Job 108] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.PlotArtmask).
+220301-07:49:11,893 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.UploadMetrics".
+220301-07:49:11,893 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = 6fe07a99d1056889eb6e26cb97a9309f/0fe3b894e3b267945a839128e56c85c3
+220301-07:49:11,924 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * in_iqms: ('/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-01_bold.json', '64bf399360fe21960f5ba5e953ef8fda') != ['/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-01_bold.json', 'c72639b6d988d9496bbe09ec839228c6']
+220301-07:49:12,223 nipype.workflow INFO:
+	 [Job 110] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220301-07:49:12,225 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 6 jobs ready. Free memory (GB): 21.80/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.UploadMetrics
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:12,622 nipype.workflow INFO:
+	 [Job 105] Cached (mriqc_wf.anatMRIQC.ComputeIQMs.measures).
+220301-07:49:12,668 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.UploadMetrics".
+220301-07:49:12,668 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = c0d82b633a6d9a5a3741373181b0a4bd/64f72cb3f67a8693b841235589ebd14a
+220301-07:49:12,703 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * in_iqms: ('/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-02_bold.json', '653126320941d30b2cabd32487710287') != ['/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-02_bold.json', 'd3bb690d3267f7e168c856b517f2e043']
+220301-07:49:12,736 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.UploadMetrics".
+220301-07:49:12,736 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = 6fb08c264c201706abd368f2e59199a0/c9d8bdf85fa45c348b2089920568d337
+220301-07:49:12,770 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * in_iqms: ('/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-03_bold.json', '04b85cd66e67959c07a96e10051b5d7f') != ['/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-03_bold.json', 'd5d6f04eb5bc01ce3f79c2276caa7cc8']
+220301-07:49:13,115 nipype.workflow INFO:
+	 [Job 114] Cached (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220301-07:49:13,572 nipype.workflow INFO:
+	 [Job 116] Cached (mriqc_wf.anatMRIQC.ReportsWorkflow.MergePlots).
+220301-07:49:13,665 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport".
+220301-07:49:13,665 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = 7fa926ec801c3e5ec0dc3bf0af30e4d4/8557e440417353437d4baeb4c488f48e
+220301-07:49:13,701 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * in_iqms: ('/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-01_bold.json', '64bf399360fe21960f5ba5e953ef8fda') != ['/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-01_bold.json', 'c72639b6d988d9496bbe09ec839228c6']
+            * in_plots: [('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicMean/plot_func_mean_mosaic1.svg', '01a9f46521966a843f83b2b9b4b3a85c'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicSD/plot_func_stddev_mosaic2_stddev.svg', '035b8a68eb6c918f3d3afa60dd5d72ef'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/BigPlot/sub-11_task-500daysofsummer_run-01_bold_valid_volreg_fmriplot.svg', 'e06300c1505828ba3147229e92f4a45b'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/ICA/melodic_reportlet.svg', '3fa2c8497145c49a24d24375ed378a71'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicZoomed/plot_anat_mosaic1_zoomed.svg', '9e2ac546ef70af77039996da6e08048d'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicNoise/plot_anat_mosaic2_noise.svg', '88b01d66831bfe83fac2b452836788aa'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotBrainmask/plot_bmask_contours.svg', '5cfa92176a26983012f1e3864d3fdc5a'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/SpatialNormalization/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/EPI2MNI/report.svg', '80bff59c7af017acaabeb475ae0ce019')] != [['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicMean/plot_func_mean_mosaic1.svg', '01a9f46521966a843f83b2b9b4b3a85c'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicSD/plot_func_stddev_mosaic2_stddev.svg', '035b8a68eb6c918f3d3afa60dd5d72ef'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/BigPlot/sub-11_task-500daysofsummer_run-01_bold_valid_volreg_fmriplot.svg', 'e06300c1505828ba3147229e92f4a45b'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/ICA/melodic_reportlet.svg', '3fa2c8497145c49a24d24375ed378a71'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicZoomed/plot_anat_mosaic1_zoomed.svg', '9e2ac546ef70af77039996da6e08048d'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotMosaicNoise/plot_anat_mosaic2_noise.svg', '88b01d66831bfe83fac2b452836788aa'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/PlotBrainmask/plot_bmask_contours.svg', '5cfa92176a26983012f1e3864d3fdc5a'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/SpatialNormalization/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/EPI2MNI/report.svg', '80bff59c7af017acaabeb475ae0ce019']]
+220301-07:49:14,225 nipype.workflow INFO:
+	 [Job 109] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220301-07:49:14,227 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 2 jobs ready. Free memory (GB): 21.40/30.00, Free processors: 52/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport
+                       * mriqc_wf.funcMRIQC.UploadMetrics
+                       * mriqc_wf.funcMRIQC.UploadMetrics
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:14,938 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/datasink".
+220301-07:49:14,989 cli WARNING:
+	 Building bold report: no exclude index was found
+220301-07:49:15,195 nipype.workflow INFO:
+	 [Node] Running "datasink" ("mriqc.interfaces.bids.IQMFileSink")
+220301-07:49:15,389 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.anatMRIQC.ComputeIQMs.datasink".
+220301-07:49:15,390 nipype.workflow INFO:
+	 [Job 115] Completed (mriqc_wf.anatMRIQC.ComputeIQMs.datasink).
+220301-07:49:15,606 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport".
+220301-07:49:15,606 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = 3d92fb0fcb88e35e57be8d10453de528/58d24d46fc3f94c9acb70e8e2a594014
+220301-07:49:15,625 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * in_iqms: ('/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-03_bold.json', '04b85cd66e67959c07a96e10051b5d7f') != ['/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/func/sub-11_task-500daysofsummer_run-03_bold.json', 'd5d6f04eb5bc01ce3f79c2276caa7cc8']
+            * in_plots: [('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicMean/plot_func_mean_mosaic1.svg', 'd09d0d44500b9d7c685833a8f83e20e6'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicSD/plot_func_stddev_mosaic2_stddev.svg', '1891f21ad5416927263263c878fd81c9'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/BigPlot/sub-11_task-500daysofsummer_run-03_bold_valid_volreg_fmriplot.svg', '5de66229c927b23856c97eee4806dba5'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/ICA/melodic_reportlet.svg', '3b4ea5302e87536d0bc23a04c8ab23e3'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicZoomed/plot_anat_mosaic1_zoomed.svg', 'e6f5b5d1755c30b86f156358b41db522'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicNoise/plot_anat_mosaic2_noise.svg', 'b3321eee233dfd0b095298203805e1c1'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotBrainmask/plot_bmask_contours.svg', '7782b501721687ca3254bcea9c361a3f'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/SpatialNormalization/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/EPI2MNI/report.svg', '8d20fc7cd148716748394ffdc84e5d00')] != [['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicMean/plot_func_mean_mosaic1.svg', 'd09d0d44500b9d7c685833a8f83e20e6'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicSD/plot_func_stddev_mosaic2_stddev.svg', '1891f21ad5416927263263c878fd81c9'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/BigPlot/sub-11_task-500daysofsummer_run-03_bold_valid_volreg_fmriplot.svg', '5de66229c927b23856c97eee4806dba5'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/ICA/melodic_reportlet.svg', '3b4ea5302e87536d0bc23a04c8ab23e3'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicZoomed/plot_anat_mosaic1_zoomed.svg', 'e6f5b5d1755c30b86f156358b41db522'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotMosaicNoise/plot_anat_mosaic2_noise.svg', 'b3321eee233dfd0b095298203805e1c1'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/PlotBrainmask/plot_bmask_contours.svg', '7782b501721687ca3254bcea9c361a3f'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/SpatialNormalization/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/EPI2MNI/report.svg', '8d20fc7cd148716748394ffdc84e5d00']]
+220301-07:49:16,227 nipype.workflow INFO:
+	 [Job 111] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220301-07:49:16,227 nipype.workflow INFO:
+	 [Job 113] Completed (mriqc_wf.funcMRIQC.UploadMetrics).
+220301-07:49:16,228 nipype.workflow INFO:
+	 [Job 117] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220301-07:49:16,229 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 3 jobs ready. Free memory (GB): 21.80/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:16,388 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.anatMRIQC.UploadMetrics".
+220301-07:49:16,388 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = 74796c2dfba9114e1feb1217a577723f/938005974f201c943cd34433de0cf4f9
+220301-07:49:16,413 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * in_iqms: ('/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/anat/sub-11_T1w.json', '81dc1edc175ef19348e036cf18c59eb6') != ['/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/anat/sub-11_T1w.json', '5c8f4ef7a85cc603e1082569714d695e']
+220301-07:49:16,463 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.anatMRIQC.ReportsWorkflow.GenerateReport".
+220301-07:49:16,463 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = ec54a5bc56e2066dec5311aaecca1ecc/4f0275fcc97847a43de37d324799fd5d
+220301-07:49:16,489 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * in_iqms: ('/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/anat/sub-11_T1w.json', '81dc1edc175ef19348e036cf18c59eb6') != ['/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/mriqc/ds002837-mriqc/sub-11/anat/sub-11_T1w.json', '5c8f4ef7a85cc603e1082569714d695e']
+            * in_plots: [('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotMosaicZoomed/plot_anat_mosaic1_zoomed.svg', 'dc002d8e02ed8750a27e925c4be0af99'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotMosaicNoise/plot_anat_mosaic2_noise.svg', 'f7971acdb3767df47043a341714adea6'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/SpatialNormalization/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/SpatialNormalization/report.svg', '88be0363ba0319343db12f0453223f00'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotBrainmask/plot_bmask_contours.svg', '66ad40252f2574a80960f2e8839baac1'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotSegmentation/plot_sub-11_T1w_conformed_contours.svg', '22f5c1ad3fb5b3208cc3fa52d42eb95b'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotArtmask/plot_artmask_contours.svg', '674dc2b05434ef1663755024ca65b13c'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotHeadmask/plot_headmask_contours.svg', '751fb21ee257cd7668f5ae3a2b5f4241'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotAirmask/plot_airmask_contours.svg', '948a25dab7a4fb4d370f5df368adbd83'), ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/ComputeQI2/qi2_plot.svg', '74985b70ca80452ac50006d450f4f1a9')] != [['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotMosaicZoomed/plot_anat_mosaic1_zoomed.svg', 'dc002d8e02ed8750a27e925c4be0af99'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotMosaicNoise/plot_anat_mosaic2_noise.svg', 'f7971acdb3767df47043a341714adea6'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/SpatialNormalization/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/SpatialNormalization/report.svg', '88be0363ba0319343db12f0453223f00'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotBrainmask/plot_bmask_contours.svg', '66ad40252f2574a80960f2e8839baac1'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotSegmentation/plot_sub-11_T1w_conformed_contours.svg', '22f5c1ad3fb5b3208cc3fa52d42eb95b'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotArtmask/plot_artmask_contours.svg', '674dc2b05434ef1663755024ca65b13c'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotHeadmask/plot_headmask_contours.svg', '751fb21ee257cd7668f5ae3a2b5f4241'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/PlotAirmask/plot_airmask_contours.svg', '948a25dab7a4fb4d370f5df368adbd83'], ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ComputeIQMs/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/ComputeQI2/qi2_plot.svg', '74985b70ca80452ac50006d450f4f1a9']]
+220301-07:49:16,504 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:16,505 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = 9375cd4a441fe8bf0977c1435e0e0441/da66725b6e474aeb8990fd37539e6158
+220301-07:49:16,541 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * _outputs: [('@html_report', ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-01_bold.html', '554330484f735847490e5278c5013d8e'))] != [['@html_report', ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-01_bold.html', '8384a7f6e61cd8d42f81e946593c08fa']]]
+220301-07:49:16,541 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/dsplots".
+220301-07:49:16,542 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:16,542 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = 9375cd4a441fe8bf0977c1435e0e0441/da66725b6e474aeb8990fd37539e6158
+220301-07:49:16,548 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * _outputs: [('@html_report', ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-01_bold.html', '554330484f735847490e5278c5013d8e'))] != [['@html_report', ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-01_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-01_bold.html', '8384a7f6e61cd8d42f81e946593c08fa']]]
+220301-07:49:16,650 cli WARNING:
+	 Building bold report: no exclude index was found
+220301-07:49:16,700 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220301-07:49:16,947 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:16,947 nipype.workflow INFO:
+	 [Job 122] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220301-07:49:18,228 nipype.workflow INFO:
+	 [Job 119] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220301-07:49:18,229 nipype.workflow INFO:
+	 [Job 120] Completed (mriqc_wf.anatMRIQC.UploadMetrics).
+220301-07:49:18,230 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 1 jobs ready. Free memory (GB): 21.80/30.00, Free processors: 54/56.
+                     Currently running:
+                       * mriqc_wf.anatMRIQC.ReportsWorkflow.GenerateReport
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:18,432 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:18,432 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = abb2dac56ccfebbba4904138391568b1/527443d4373005053b847d870c0657fd
+220301-07:49:18,457 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * _outputs: [('@html_report', ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-03_bold.html', '1153b000d5476a70a0f9ac85d6b2f356'))] != [['@html_report', ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-03_bold.html', '9dcfb37dedfd11b5f6172c0cf837ccc8']]]
+220301-07:49:18,457 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/dsplots".
+220301-07:49:18,467 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:18,467 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = abb2dac56ccfebbba4904138391568b1/527443d4373005053b847d870c0657fd
+220301-07:49:18,475 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * _outputs: [('@html_report', ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-03_bold.html', '1153b000d5476a70a0f9ac85d6b2f356'))] != [['@html_report', ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-03_bold.nii.gz/GenerateReport/sub-11_task-500daysofsummer_run-03_bold.html', '9dcfb37dedfd11b5f6172c0cf837ccc8']]]
+220301-07:49:18,701 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220301-07:49:19,111 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:19,111 nipype.workflow INFO:
+	 [Job 124] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220301-07:49:20,229 nipype.workflow INFO:
+	 [Job 121] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.GenerateReport).
+220301-07:49:20,230 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220301-07:49:20,379 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:20,379 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = fbdbed0b7486a890a274179ad3a5c870/ce210d8d806c2a4a3f80b6133580b74f
+220301-07:49:20,489 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * _outputs: [('@html_report', ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/GenerateReport/sub-11_T1w.html', 'd7caebcc82624d131d19b424ca875f5e'))] != [['@html_report', ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/GenerateReport/sub-11_T1w.html', '4b9f70e92eb5ca853f47b6a0dd6c8ea2']]]
+220301-07:49:20,489 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/dsplots".
+220301-07:49:20,527 nipype.workflow INFO:
+	 [Node] Outdated cache found for "mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:20,527 nipype.workflow VERBOSE:
+	 [Node] Old/new hashes = fbdbed0b7486a890a274179ad3a5c870/ce210d8d806c2a4a3f80b6133580b74f
+220301-07:49:20,546 nipype.workflow VERBOSE:
+	           Some dictionary entries had differing values:
+            * _outputs: [('@html_report', ('/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/GenerateReport/sub-11_T1w.html', 'd7caebcc82624d131d19b424ca875f5e'))] != [['@html_report', ['/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/anatMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..anat..sub-11_T1w.nii.gz/GenerateReport/sub-11_T1w.html', '4b9f70e92eb5ca853f47b6a0dd6c8ea2']]]
+220301-07:49:20,895 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220301-07:49:21,616 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots".
+220301-07:49:21,616 nipype.workflow INFO:
+	 [Job 125] Completed (mriqc_wf.anatMRIQC.ReportsWorkflow.dsplots).
+220301-07:49:22,230 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 0 jobs ready. Free memory (GB): 22.00/30.00, Free processors: 55/56.
+                     Currently running:
+                       * mriqc_wf.funcMRIQC.ICA
+220301-15:16:25,987 nipype.workflow INFO:
+	 [Job 73] Completed (mriqc_wf.funcMRIQC.ICA).
+220301-15:16:26,6 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220301-15:16:27,990 nipype.workflow INFO:
+	 [Job 112] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.MergePlots).
+220301-15:16:27,991 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220301-15:16:28,698 cli WARNING:
+	 Building bold report: no exclude index was found
+220301-15:16:29,992 nipype.workflow INFO:
+	 [Job 118] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.GenerateReport).
+220301-15:16:29,993 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 30.00/30.00, Free processors: 56/56.
+220301-15:16:30,68 nipype.workflow INFO:
+	 [Node] Setting-up "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots" in "/scratch1/03201/jbwexler/work_dir/mriqc/ds002837_sub-11/mriqc_wf/funcMRIQC/ReportsWorkflow/_in_file_..scratch1..03201..jbwexler..openneuro_derivatives..derivatives..mriqc..ds002837-mriqc..sourcedata..raw..sub-11..func..sub-11_task-500daysofsummer_run-02_bold.nii.gz/dsplots".
+220301-15:16:30,76 nipype.workflow INFO:
+	 [Node] Running "dsplots" ("nipype.interfaces.io.DataSink")
+220301-15:16:30,282 nipype.workflow INFO:
+	 [Node] Finished "mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots".
+220301-15:16:30,283 nipype.workflow INFO:
+	 [Job 123] Completed (mriqc_wf.funcMRIQC.ReportsWorkflow.dsplots).
+220301-15:16:32,141 cli WARNING:
+	 IMPORTANT: Anonymized quality metrics (IQMs) will be submitted to MRIQC's metrics repository. Submission of IQMs can be disabled using the ``--no-sub`` argument. Please visit https://mriqc.readthedocs.io/en/latest/dsa.html to revise MRIQC's Data Sharing Agreement.
+220301-15:16:32,141 cli IMPORTANT:
+	 Participant level finished successfully.
+220301-15:16:32,141 cli INFO:
+	 Generating BIDS derivatives metadata.
+220301-15:16:32,144 cli INFO:
+	 MRIQC completed.
